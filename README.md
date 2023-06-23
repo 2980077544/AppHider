@@ -1,12 +1,15 @@
 中文 | [English][2]
+# App Hider
 
-# Evil Hide
-隐藏app的app。用处自己挖掘。
+App Hider项目是基于Evil Hide开发的项目（原作者项目已经不再维护了）
+
+用来隐藏任何你想要的Android应用！
 
 ![1](./demo.gif)
 
 ### 注意：
-只在Nexus 4、Nexus 5X上测试通过，小米手机不能使用(MIUI会把不在近期任务列表里的应用杀掉，导致应用的BroadcastReceiver不能响应拨号事件)
+在Nexus 4、Nexus 5X上测试通过
+**本项目已支持MIUI13！**
 
 ### 特点：
 - 可以隐藏软件自身的图标，并通过在拨号盘输入暗号启动应用
@@ -54,7 +57,10 @@ git checkout noroot
 ### 待做列表：
 - [x] Android 6.0的权限管理
 - [x] 当检测到手机是Android 4.4以上时，使用`pm hide`代替`pm disable`
-- [ ] 使用密码启动被隐藏的应用
+- [ ] 使用Shizuku提供的接口重写程序
+- [ ] 修改暗号启动逻辑
+- [ ] 暗号启动应用
+- [ ] 兼容Wear OS系统
 
-[1]: https://github.com/blackbbc/Evil-Hide/blob/master/README.md
-[2]: https://github.com/blackbbc/Evil-Hide/blob/master/README_en.md
+[1]: https://github.com/2980077544/AppHider/blob/master/README.md
+[2]: https://github.com/2980077544/AppHider/blob/master/README_en.md
